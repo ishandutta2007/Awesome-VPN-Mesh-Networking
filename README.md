@@ -209,3 +209,113 @@ Star the repo if you find it useful!
 Let's expand open workflow orchestration while recognizing the managed convenience that hosted Airflow, Prefect, Dagster, and Temporal clouds deliver.
 # Awesome-VPN-Mesh-Networking
 
+# Top VPN & Mesh Networking Ecosystem
+
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+*Focused on WireGuard Overlays, Peer-to-Peer Mesh VPNs, Coordination Servers & Private Device Networks*  
+**Last updated: October 2026**
+
+This repository tracks notable **SaaS platforms** and **open-source projects** for **VPN & Mesh Networking**. These systems create encrypted overlay networks so laptops, servers, and IoT devices can reach each other privately across NATs and clouds—often with near zero manual peer configuration.
+
+**Examples** include Tailscale, ZeroTier, NetBird Cloud, Cloudflare Magic WAN, Perimeter 81, Twingate, OpenVPN Cloud, NordLayer, WireGuard-based clouds, GoodAccess, and **Headscale** (`juanfont/headscale`)—an open-source, self-hosted implementation of Tailscale’s control server.
+
+**Open-source emphasis**: Mesh VPN is one of the strongest open networking niches. **Headscale**, **NetBird**, **Nebula**, **WireGuard**, **innernet**, and **ZeroTier** core components enable full self-hosted meshes. This section is heavily expanded.
+
+Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+
+## Table of Contents
+- [SaaS/Hosted Platforms](#saas-hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+## SaaS/Hosted Platforms
+
+- **[Tailscale, NetBird Cloud, ZeroTier](https://tailscale.com/)**  
+  Managed mesh VPN platforms—WireGuard or custom data planes with hosted coordination, ACLs, and easy device onboarding.
+
+- **[Cloudflare Magic WAN / Zero Trust networking, Twingate, Perimeter 81, NordLayer, GoodAccess](https://www.cloudflare.com/)**  
+  Enterprise overlay and ZTNA-style connectivity—branch, cloud, and user access over provider backbones.
+
+- **[OpenVPN Cloud and commercial WireGuard services](https://openvpn.net/)**  
+  Hosted VPN clouds built on OpenVPN or WireGuard for teams that want managed concentrators.
+
+- **[Other commercial mesh & overlay networks](https://www.twingate.com/)**  
+  Additional business mesh and private-network SaaS products.
+
+## Open-Source GitHub Projects
+
+### Tailscale-Compatible & WireGuard Mesh
+
+- **[Headscale](https://github.com/juanfont/headscale)**  
+  Open-source self-hosted implementation of the Tailscale control server—run your own coordination layer while using official Tailscale clients.
+
+- **[NetBird](https://github.com/netbirdio/netbird)**  
+  Full open-source WireGuard mesh stack—self-hosted management, signaling, and clients for a complete private network.
+
+- **[WireGuard](https://github.com/WireGuard/wireguard-tools)**  
+  Core open VPN protocol used by Tailscale, Headscale, NetBird, and many meshes—fast, simple, modern crypto.
+
+- **[Firezone](https://github.com/firezone/firezone)**  
+  Open WireGuard-based access platform—self-hosted secure remote connectivity with identity provider integration.
+
+### Other Open Overlay Networks
+
+- **[Nebula](https://github.com/slackhq/nebula)**  
+  Open scalable mesh overlay from Slack—mutual certificate authentication and host-level firewall rules.
+
+- **[ZeroTierOne](https://github.com/zerotier/ZeroTierOne)**  
+  Open networking client/node software for ZeroTier virtual networks (control plane often commercial).
+
+- **[innernet](https://github.com/tonarino/innernet)**  
+  Open WireGuard-based private network with a focus on simplicity and auditability.
+
+- **[Wesher](https://github.com/costela/wesher)**  
+  Open automatic WireGuard mesh for clusters—low-ops peer discovery for servers.
+
+- **[OpenZiti](https://github.com/openziti/ziti)**  
+  Open zero-trust overlay—mesh-like connectivity with strong application identity (beyond classic VPN).
+
+- **[Yggdrasil](https://github.com/yggdrasil-network/yggdrasil-go)**  
+  Open end-to-end encrypted IPv6 overlay network—experimental global mesh design.
+
+### Classic Open VPN Building Blocks
+
+- **[OpenVPN](https://github.com/OpenVPN/openvpn)**  
+  Traditional open VPN—still used for hub-and-spoke topologies versus pure peer mesh.
+
+- **[Pritunl](https://github.com/pritunl/pritunl)**  
+  Open distributed VPN server supporting OpenVPN and WireGuard modes.
+
+### Additional Strong Open-Source Options
+
+- **Self-hosted Tailscale experience**: Headscale + Tailscale clients.
+- **All-in-one open mesh**: NetBird.
+- **Cert-based mesh**: Nebula.
+- **Minimal WG automation**: Wesher or innernet.
+- **Composable stacks**: WireGuard data plane → Headscale/NetBird control → SSO (Keycloak) → optional exit nodes.
+- Commercial meshes still lead for managed DERP/relay fleets, global performance, and polished admin UX.
+
+**Frameworks for building custom systems**:  
+**Headscale** when you want Tailscale clients with your own server; **NetBird** for a fully open mesh product; **Nebula** for cert-centric overlays; **WireGuard** alone for static peers.  
+Fully open mesh VPN is production-capable for startups, homelabs, and enterprises with ops capacity.
+
+## How to Contribute
+
+1. Fork the repo.
+2. Add/edit entries in `README.md` (follow existing format).
+3. Include: name, link, 1–2 sentence description, and whether it's SaaS/hosted or open-source.
+4. Submit PR with a short explanation.
+
+Star the repo if you find it useful!
+
+## Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+- Mesh networks extend trust across every enrolled node. Protect coordination servers, enforce least-privilege ACLs, require SSO/MFA for admin, and monitor new peer joins. Treat overlay membership like production access.
+- Open-source meshes offer control and transparency. Commercial platforms shift relays and support to the vendor. Neither replaces endpoint hardening and application-layer authorization.
+
+---
+
+**Made for platform engineers, homelab operators, and teams building private device networks.**  
+Let's expand open WireGuard mesh networking while recognizing the managed relay scale that commercial Tailscale-class platforms deliver.
